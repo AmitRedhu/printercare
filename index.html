@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>PrinterCare – Service &amp; Complaint App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head><body>
+<div class="phone">
+
+<!-- LOGIN -->
+<section class="s" id="login">
+ <div class="login-top">
+  <div class="logo"><i class="bi bi-printer-fill"></i>PrinterCare</div>
+  <h1>Printer service, sorted.</h1><p>Register printers, raise complaints and track every visit in one place.</p>
+ </div>
+ <div class="card login-card">
+  <div class="f"><label>Mobile number</label><div class="in"><i class="bi bi-phone"></i>+91 98765 43210</div></div>
+  <div class="f"><label>Password</label><div class="in"><i class="bi bi-lock"></i>••••••••<i class="bi bi-eye" style="margin-left:auto"></i></div></div>
+  <a class="btn" href="#c-home">Log in</a>
+ </div>
+ <div class="sec"><h2>Try a demo role</h2></div>
+ <div class="roles">
+  <a href="#c-home"><i class="bi bi-person"></i>Customer</a>
+  <a href="#t-home"><i class="bi bi-tools"></i>Technician</a>
+  <a href="#a-home"><i class="bi bi-speedometer2"></i>Admin</a>
+ </div>
+</section>
+
+<!-- ============ CUSTOMER ============ -->
+<section class="s c" id="c-home">
+ <div class="hd"><div class="logo"><i class="bi bi-printer-fill"></i>PrinterCare</div><a class="ic dot" href="#c-profile"><i class="bi bi-bell"></i></a></div>
+ <div class="hero"><p>Namaste,</p><h1>Rajesh Kumar</h1><a class="btn w" href="#c-raise"><i class="bi bi-plus-circle-fill"></i>Raise complaint</a></div>
+ <div class="grid" style="margin-top:12px">
+  <div class="kpi"><i class="bi bi-printer"></i><b>3</b><span>Printers</span></div>
+  <div class="kpi warn"><i class="bi bi-exclamation-circle"></i><b>1</b><span>Open</span></div>
+  <div class="kpi ok" style="grid-column:span 2"><i class="bi bi-check2-circle"></i><b>7</b><span>Resolved complaints</span></div>
+ </div>
+ <div class="sec"><h2>My printers</h2><a href="#c-printers">View all</a></div>
+ <a class="card row" href="#c-printers"><div class="pi"><i class="bi bi-printer"></i></div><div class="g"><b>HP LaserJet Pro M126nw</b><div class="m">SN: VNC3K12845</div></div><span class="b done">In warranty</span></a>
+ <a class="card row" href="#c-printers"><div class="pi"><i class="bi bi-printer"></i></div><div class="g"><b>Canon PIXMA G3010</b><div class="m">SN: KXQA87321</div></div><span class="b over">Expired</span></a>
+ <div class="sec"><h2>Recent activity</h2><a href="#c-complaints">See all</a></div>
+ <ul class="tl card" style="padding:16px 16px 12px">
+  <li class="c"><b>Technician assigned</b><span class="m">PC-1042 · Amit Sharma · Today, 10:15 am</span></li>
+  <li class="d"><b>Complaint registered</b><span class="m">PC-1042 · Paper jam · Yesterday</span></li>
+  <li class="d"><b>PC-1018 resolved</b><span class="m">Canon PIXMA G3010 · 12 Oct</span></li>
+ </ul>
+</section>
+
+<section class="s c" id="c-printers">
+ <div class="hd"><h1>My printers</h1><a class="ic" href="#c-home"><i class="bi bi-plus-lg"></i></a></div>
+ <div class="card"><div class="top"><div class="row"><div class="pi"><i class="bi bi-printer"></i></div><div><b>HP LaserJet Pro M126nw</b><div class="m">HP · Mono laser MFP</div></div></div><span class="b done">In warranty</span></div>
+  <div class="kv"><span>Serial no.</span><b>VNC3K12845</b></div><div class="kv"><span>Purchased</span><b>14 Mar 2025 · Sharma Traders, Ludhiana</b></div><div class="kv"><span>Warranty ends</span><b>13 Mar 2027</b></div></div>
+ <div class="card"><div class="top"><div class="row"><div class="pi"><i class="bi bi-printer"></i></div><div><b>Canon PIXMA G3010</b><div class="m">Canon · Ink tank</div></div></div><span class="b over">Expired</span></div>
+  <div class="kv"><span>Serial no.</span><b>KXQA87321</b></div><div class="kv"><span>Warranty ended</span><b>02 Aug 2025</b></div></div>
+ <div class="card"><div class="top"><div class="row"><div class="pi"><i class="bi bi-printer"></i></div><div><b>Epson EcoTank L3250</b><div class="m">Epson · Ink tank</div></div></div><span class="b done">In warranty</span></div>
+  <div class="kv"><span>Serial no.</span><b>X4QK015873</b></div><div class="kv"><span>Warranty ends</span><b>20 Jan 2028</b></div></div>
+</section>
+
+<section class="s c" id="c-raise">
+ <a class="back" href="#c-home"><i class="bi bi-chevron-left"></i>Raise complaint</a>
+ <div class="f"><label>Printer</label><div class="in"><i class="bi bi-printer"></i>HP LaserJet Pro M126nw<i class="bi bi-chevron-down" style="margin-left:auto"></i></div></div>
+ <div class="f"><label>Category</label><div class="chips" style="flex-wrap:wrap"><span class="on">Paper jam</span><span>Print quality</span><span>Not powering on</span><span>Network</span><span>Other</span></div></div>
+ <div class="f"><label>Issue title</label><div class="in">Paper keeps jamming at tray 1</div></div>
+ <div class="f"><label>Description</label><div class="in ta">Jam occurs after 3–4 pages. Tried clearing rollers.</div></div>
+ <div class="f"><label>Photos</label><div class="up"><i class="bi bi-camera"></i>Add photos</div></div>
+ <div class="f"><label>Service location</label><div class="in"><i class="bi bi-geo-alt"></i>Model Town, Ludhiana 141002</div></div>
+ <div class="f"><label>Contact number</label><div class="in"><i class="bi bi-telephone"></i>+91 98765 43210</div></div>
+ <a class="btn" href="#c-complaints">Submit complaint</a>
+</section>
+
+<section class="s c" id="c-complaints">
+ <div class="hd"><h1>My complaints</h1></div>
+ <div class="chips"><span class="on">All</span><span>Open</span><span>In progress</span><span>Resolved</span></div>
+ <a class="card" href="#c-detail"><div class="top"><div><b>PC-1042</b><div class="m">Paper jam · HP LaserJet Pro M126nw</div></div><span class="b prog">In progress</span></div><div class="meta"><span><i class="bi bi-calendar3"></i>01 Nov</span><span><i class="bi bi-person-gear"></i>Amit Sharma</span></div></a>
+ <a class="card" href="#c-detail"><div class="top"><div><b>PC-1018</b><div class="m">Blurred print · Canon PIXMA G3010</div></div><span class="b done">Resolved</span></div><div class="meta"><span><i class="bi bi-calendar3"></i>10 Oct</span><span><i class="bi bi-person-gear"></i>Gurpreet Singh</span></div></a>
+ <a class="card" href="#c-detail"><div class="top"><div><b>PC-0977</b><div class="m">Wi-Fi drops · Epson EcoTank L3250</div></div><span class="b done">Resolved</span></div><div class="meta"><span><i class="bi bi-calendar3"></i>02 Sep</span><span><i class="bi bi-person-gear"></i>Amit Sharma</span></div></a>
+</section>
+
+<section class="s c" id="c-detail">
+ <a class="back" href="#c-complaints"><i class="bi bi-chevron-left"></i>PC-1042</a>
+ <div class="card"><div class="top"><div><b>Paper jam at tray 1</b><div class="m">HP LaserJet Pro M126nw</div></div><span class="b prog">In progress</span></div><p class="sub">Jam occurs after 3–4 pages. Tried clearing rollers.</p></div>
+ <div class="card row"><div class="av">AS</div><div class="g"><b>Amit Sharma</b><div class="m">Service engineer · Ludhiana</div></div><span class="ic"><i class="bi bi-telephone-fill" style="color:var(--p)"></i></span></div>
+ <div class="card row" style="background:var(--p2);box-shadow:none"><i class="bi bi-calendar-check" style="font-size:22px;color:var(--p)"></i><div><b>Visit scheduled</b><div class="m">Tue, 3 Nov · 11:00 am – 1:00 pm</div></div></div>
+ <div class="sec"><h2>Progress</h2></div>
+ <ul class="tl card" style="padding:16px">
+  <li class="d"><b>Registered</b><span class="m">01 Nov, 4:20 pm</span></li>
+  <li class="d"><b>Technician assigned</b><span class="m">02 Nov, 10:15 am</span></li>
+  <li class="c"><b>Visit scheduled</b><span class="m">Remark: “Bringing pickup roller kit.”</span></li>
+  <li><b>Work in progress</b></li><li><b>Resolved</b></li>
+ </ul>
+ <div class="sec"><h2>Photos</h2></div>
+ <div class="photos"><div><i class="bi bi-image"></i></div><div><i class="bi bi-image"></i></div></div>
+</section>
+
+<section class="s c" id="c-profile">
+ <div class="hd"><h1>Profile</h1></div>
+ <div class="pro"><div class="av">RK</div><h2>Rajesh Kumar</h2><div class="m">+91 98765 43210 · Ludhiana, Punjab</div></div>
+ <div class="sec" style="margin-top:0"><h2>Notifications</h2></div>
+ <div class="card"><div class="row"><div class="pi"><i class="bi bi-person-check"></i></div><div class="g"><b>Amit Sharma assigned</b><div class="m">PC-1042 · 2 hours ago</div></div></div></div>
+ <div class="card"><div class="row"><div class="pi"><i class="bi bi-shield-check"></i></div><div class="g"><b>Warranty ends in 60 days</b><div class="m">Epson EcoTank L3250</div></div></div></div>
+ <div class="card menu"><a href="#c-profile"><i class="bi bi-person"></i><span>Personal details</span><i class="bi bi-chevron-right"></i></a><a href="#c-profile"><i class="bi bi-bell"></i><span>Notification settings</span><i class="bi bi-chevron-right"></i></a><a href="#login"><i class="bi bi-box-arrow-right"></i><span>Log out</span><i class="bi bi-chevron-right"></i></a></div>
+</section>
+
+<nav class="nc"><a href="#c-home"><i class="bi bi-house"></i>Home</a><a href="#c-printers"><i class="bi bi-printer"></i>Printers</a><a href="#c-complaints"><i class="bi bi-chat-square-text"></i>Complaints</a><a href="#c-profile"><i class="bi bi-person"></i>Profile</a></nav>
+
+<!-- ============ TECHNICIAN ============ -->
+<section class="s t" id="t-home">
+ <div class="hd"><div class="logo"><i class="bi bi-printer-fill"></i>PrinterCare</div><a class="ic dot" href="#t-profile"><i class="bi bi-bell"></i></a></div>
+ <div class="hero"><p>Good morning, Amit</p><h1>4 visits today</h1><a class="btn w" href="#t-jobs"><i class="bi bi-list-check"></i>Open assigned jobs</a></div>
+ <div class="grid" style="margin-top:12px">
+  <div class="kpi"><i class="bi bi-clipboard2"></i><b>12</b><span>Assigned</span></div>
+  <div class="kpi warn"><i class="bi bi-hourglass-split"></i><b>5</b><span>Pending</span></div>
+  <div class="kpi ok"><i class="bi bi-check2-all"></i><b>46</b><span>Completed</span></div>
+  <div class="kpi bad"><i class="bi bi-alarm"></i><b>2</b><span>Overdue</span></div>
+ </div>
+ <div class="sec"><h2>Next visit</h2></div>
+ <a class="card" href="#t-job"><div class="top"><div><b>Rajesh Kumar</b><div class="m">Model Town, Ludhiana</div></div><span class="b over">High</span></div><div class="row"><div class="pi"><i class="bi bi-printer"></i></div><div class="g"><b>HP LaserJet Pro M126nw</b><div class="m">Paper jam</div></div></div><div class="meta"><span><i class="bi bi-clock"></i>11:00 am</span><span><i class="bi bi-geo-alt"></i>3.2 km</span></div></a>
+</section>
+
+<section class="s t" id="t-jobs">
+ <div class="hd"><h1>Assigned jobs</h1></div>
+ <div class="search"><i class="bi bi-search"></i>Search customer or ID</div>
+ <div class="chips"><span class="on">All</span><span>Today</span><span>Pending</span><span>Overdue</span></div>
+ <a class="card" href="#t-job"><div class="top"><div><b>PC-1042 · Rajesh Kumar</b><div class="m">HP LaserJet Pro M126nw</div></div><span class="b over">High</span></div><span class="b prog">In progress</span><div class="meta"><span><i class="bi bi-geo-alt"></i>Model Town</span><span><i class="bi bi-clock"></i>11:00 am</span></div></a>
+ <a class="card" href="#t-job"><div class="top"><div><b>PC-1039 · Simran Kaur</b><div class="m">Epson EcoTank L3250</div></div><span class="b prog">Medium</span></div><span class="b open">Assigned</span><div class="meta"><span><i class="bi bi-geo-alt"></i>Sarabha Nagar</span><span><i class="bi bi-clock"></i>2:30 pm</span></div></a>
+ <a class="card" href="#t-job"><div class="top"><div><b>PC-1021 · Mehta Stationers</b><div class="m">Brother HL-L2321D</div></div><span class="b over">High</span></div><span class="b over">Overdue</span><div class="meta"><span><i class="bi bi-geo-alt"></i>Chaura Bazaar</span><span><i class="bi bi-calendar3"></i>Due 30 Oct</span></div></a>
+</section>
+
+<section class="s t" id="t-job">
+ <a class="back" href="#t-jobs"><i class="bi bi-chevron-left"></i>PC-1042</a>
+ <div class="card"><div class="kv"><span>Customer</span><b>Rajesh Kumar</b></div><div class="kv"><span>Phone</span><b>+91 98765 43210</b></div><div class="kv"><span>Address</span><b>Model Town, Ludhiana</b></div></div>
+ <div class="card"><div class="kv"><span>Printer</span><b>HP LaserJet Pro M126nw</b></div><div class="kv"><span>Serial</span><b>VNC3K12845</b></div><div class="kv"><span>Warranty</span><b>In warranty</b></div></div>
+ <div class="card"><b>Paper jam at tray 1</b><p class="sub" style="margin-top:4px">Jam occurs after 3–4 pages. Tried clearing rollers.</p></div>
+ <div class="seg"><span>Assigned</span><span class="on">On the way</span><span>Working</span></div>
+ <a class="btn" href="#t-report"><i class="bi bi-file-earmark-text"></i>Fill service report</a>
+</section>
+
+<section class="s t" id="t-report">
+ <a class="back" href="#t-jobs"><i class="bi bi-chevron-left"></i>Service report</a>
+ <div class="f"><label>Diagnosis</label><div class="in">Worn pickup roller</div></div>
+ <div class="f"><label>Work performed</label><div class="in ta">Replaced pickup roller, cleaned paper path, test-printed 20 pages.</div></div>
+ <div class="f"><label>Parts replaced</label><div class="in"><i class="bi bi-gear"></i>Pickup roller kit · RM1-4425</div></div>
+ <div class="f"><label>Remarks</label><div class="in">No further issues</div></div>
+ <div class="f"><label>Photos</label><div class="up"><i class="bi bi-camera"></i>Add before / after photos</div></div>
+ <div class="f"><label>Customer acknowledgement</label><div class="in" style="min-height:70px;justify-content:center"><i class="bi bi-pen"></i>Customer signs here</div></div>
+ <a class="btn" href="#t-jobs">Complete job</a>
+</section>
+
+<section class="s t" id="t-profile">
+ <div class="hd"><h1>Profile</h1></div>
+ <div class="pro"><div class="av">AS</div><h2>Amit Sharma</h2><div class="m">Service engineer · ID TE-014</div></div>
+ <div class="card"><div class="kv"><span>Territory</span><b>Ludhiana &amp; Khanna</b></div><div class="kv"><span>Phone</span><b>+91 98140 22871</b></div></div>
+ <div class="sec" style="margin-top:0"><h2>This month</h2></div>
+ <div class="grid"><div class="kpi ok"><i class="bi bi-check2-circle"></i><b>38</b><span>Jobs closed</span></div><div class="kpi"><i class="bi bi-star"></i><b>4.8</b><span>Avg. rating</span></div></div>
+ <div class="card menu" style="margin-top:10px"><a href="#login"><i class="bi bi-box-arrow-right"></i><span>Log out</span><i class="bi bi-chevron-right"></i></a></div>
+</section>
+
+<nav class="nt"><a href="#t-home"><i class="bi bi-grid"></i>Dashboard</a><a href="#t-jobs"><i class="bi bi-list-check"></i>Jobs</a><a href="#t-report"><i class="bi bi-file-earmark-text"></i>Report</a><a href="#t-profile"><i class="bi bi-person"></i>Profile</a></nav>
+
+<!-- ============ ADMIN ============ -->
+<section class="s a" id="a-home">
+ <div class="hd"><div class="logo"><i class="bi bi-printer-fill"></i>Admin</div><a class="ic dot" href="#a-more"><i class="bi bi-bell"></i></a></div>
+ <div class="grid">
+  <div class="kpi"><i class="bi bi-printer"></i><b>1,284</b><span>Printers sold</span></div>
+  <div class="kpi"><i class="bi bi-people"></i><b>962</b><span>Customers</span></div>
+  <div class="kpi"><i class="bi bi-chat-square-text"></i><b>318</b><span>Total complaints</span></div>
+  <div class="kpi"><i class="bi bi-person-gear"></i><b>24</b><span>Active technicians</span></div>
+  <div class="kpi warn"><i class="bi bi-envelope-open"></i><b>41</b><span>Open</span></div>
+  <div class="kpi warn"><i class="bi bi-hourglass-split"></i><b>27</b><span>Pending</span></div>
+  <div class="kpi ok"><i class="bi bi-check2-circle"></i><b>236</b><span>Resolved</span></div>
+  <div class="kpi bad"><i class="bi bi-alarm"></i><b>14</b><span>Overdue</span></div>
+ </div>
+ <div class="sec"><h2>Sales trend</h2><span class="m">Last 6 months</span></div>
+ <div class="card"><svg viewBox="0 0 300 110" width="100%" role="img" aria-label="Sales trend rising from 140 to 230 units">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".18"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
+  <path d="M10 80 L60 70 L110 74 L160 50 L210 42 L260 18 L260 100 L10 100Z" fill="url(#g)"/>
+  <polyline points="10,80 60,70 110,74 160,50 210,42 260,18" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="260" cy="18" r="4.5" fill="#2563EB" stroke="#fff" stroke-width="2"/>
+  <g font-size="9" fill="#64748B" text-anchor="middle"><text x="10" y="110">May</text><text x="60" y="110">Jun</text><text x="110" y="110">Jul</text><text x="160" y="110">Aug</text><text x="210" y="110">Sep</text><text x="260" y="110">Oct</text></g></svg></div>
+ <div class="sec"><h2>Complaints per month</h2></div>
+ <div class="card"><div class="bars"><div><i style="height:45%"></i>May</div><div><i style="height:60%"></i>Jun</div><div><i style="height:38%"></i>Jul</div><div><i style="height:72%"></i>Aug</div><div><i style="height:55%"></i>Sep</div><div class="hi"><i style="height:90%"></i>Oct</div></div></div>
+ <div class="sec"><h2>By state</h2></div>
+ <div class="card"><div class="hb"><div class="top"><span>Punjab</span><b>112</b></div><u><i style="width:90%"></i></u></div><div class="hb"><div class="top"><span>Haryana</span><b>84</b></div><u><i style="width:68%"></i></u></div><div class="hb"><div class="top"><span>Uttar Pradesh</span><b>63</b></div><u><i style="width:50%"></i></u></div><div class="hb" style="margin:0"><div class="top"><span>Rajasthan</span><b>38</b></div><u><i style="width:30%"></i></u></div></div>
+ <div class="sec"><h2>Recent complaints</h2><a href="#a-complaints">See all</a></div>
+ <a class="card" href="#a-assign"><div class="top"><div><b>PC-1043 · Canon PIXMA G3010</b><div class="m">Gupta Agencies, Amritsar</div></div><span class="b open">New</span></div></a>
+</section>
+
+<section class="s a" id="a-complaints">
+ <div class="hd"><h1>Complaints</h1><span class="ic"><i class="bi bi-funnel"></i></span></div>
+ <div class="search"><i class="bi bi-search"></i>Search ID, customer or printer</div>
+ <div class="chips"><span class="on">All 318</span><span>New 41</span><span>Overdue 14</span><span>Resolved</span></div>
+ <a class="card" href="#a-assign"><div class="top"><div><b>PC-1043 · Gupta Agencies</b><div class="m">Canon PIXMA G3010 · Amritsar</div></div><span class="b open">New</span></div><div class="meta"><span><i class="bi bi-person-x"></i>Unassigned</span><span><i class="bi bi-flag"></i>Medium</span></div></a>
+ <a class="card" href="#a-assign"><div class="top"><div><b>PC-1042 · Rajesh Kumar</b><div class="m">HP LaserJet Pro M126nw · Ludhiana</div></div><span class="b prog">In progress</span></div><div class="meta"><span><i class="bi bi-person-gear"></i>Amit Sharma</span><span><i class="bi bi-flag"></i>High</span></div></a>
+ <a class="card" href="#a-assign"><div class="top"><div><b>PC-1021 · Mehta Stationers</b><div class="m">Brother HL-L2321D · Ludhiana</div></div><span class="b over">Overdue</span></div><div class="meta"><span><i class="bi bi-person-gear"></i>Amit Sharma</span><span><i class="bi bi-flag"></i>High</span></div></a>
+</section>
+
+<section class="s a" id="a-assign">
+ <a class="back" href="#a-complaints"><i class="bi bi-chevron-left"></i>Assign technician</a>
+ <div class="card"><div class="top"><b>PC-1043</b><span class="b open">New</span></div><div class="kv"><span>Customer</span><b>Gupta Agencies</b></div><div class="kv"><span>Printer</span><b>Canon PIXMA G3010</b></div><div class="kv"><span>Issue</span><b>Ink not flowing</b></div></div>
+ <div class="sec"><h2>Nearby technicians</h2></div>
+ <div class="card row"><div class="av" style="width:44px;height:44px;font-size:15px">HS</div><div class="g"><b>Harpreet Singh</b><div class="m">Amritsar · 3 open jobs</div></div><span class="b done">Available</span></div>
+ <div class="card row"><div class="av" style="width:44px;height:44px;font-size:15px">NV</div><div class="g"><b>Neha Verma</b><div class="m">Jalandhar · 6 open jobs</div></div><span class="b prog">Busy</span></div>
+ <a class="btn" href="#a-complaints">Assign Harpreet Singh</a>
+</section>
+
+<section class="s a" id="a-people">
+ <div class="hd"><h1>People &amp; sales</h1></div>
+ <div class="seg"><span class="on">Customers</span><span>Technicians</span><span>Dealers</span></div>
+ <div class="card row"><div class="av" style="width:44px;height:44px;font-size:15px">RK</div><div class="g"><b>Rajesh Kumar</b><div class="m">Ludhiana · 3 printers</div></div><i class="bi bi-chevron-right"></i></div>
+ <div class="card row"><div class="av" style="width:44px;height:44px;font-size:15px">SK</div><div class="g"><b>Simran Kaur</b><div class="m">Ludhiana · 1 printer</div></div><i class="bi bi-chevron-right"></i></div>
+ <div class="card row"><div class="av" style="width:44px;height:44px;font-size:15px">GA</div><div class="g"><b>Gupta Agencies</b><div class="m">Amritsar · 5 printers</div></div><i class="bi bi-chevron-right"></i></div>
+ <div class="empty card"><i class="bi bi-inbox"></i>No more customers match this filter.</div>
+ <a class="btn" href="#a-people"><i class="bi bi-plus-lg"></i>Add printer sale</a>
+</section>
+
+<section class="s a" id="a-more">
+ <div class="hd"><h1>Reports &amp; settings</h1></div>
+ <div class="card menu"><a href="#a-more"><i class="bi bi-graph-up"></i><span>Sales reports</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-clipboard-data"></i><span>Complaint reports</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-award"></i><span>Technician performance</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-shield-check"></i><span>Warranty reports</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-box-seam"></i><span>Inventory reports</span><i class="bi bi-chevron-right"></i></a></div>
+ <div class="card menu"><a href="#a-more"><i class="bi bi-building"></i><span>Company profile</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-tags"></i><span>Complaint categories</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-flag"></i><span>Priority settings</span><i class="bi bi-chevron-right"></i></a><a href="#a-more"><i class="bi bi-calendar-check"></i><span>Warranty configuration</span><i class="bi bi-chevron-right"></i></a><a href="#login"><i class="bi bi-box-arrow-right"></i><span>Log out</span><i class="bi bi-chevron-right"></i></a></div>
+</section>
+
+<nav class="na"><a href="#a-home"><i class="bi bi-grid"></i>Dashboard</a><a href="#a-complaints"><i class="bi bi-chat-square-text"></i>Complaints</a><a href="#a-people"><i class="bi bi-people"></i>People</a><a href="#a-more"><i class="bi bi-three-dots"></i>More</a></nav>
+
+</div></body></html>
